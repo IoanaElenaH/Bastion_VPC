@@ -27,13 +27,13 @@ output "myip"{
 }
 
 output "ec2-instance-1" {
-  value = "${aws_instance.ioana-instance-1}"
+  value = "${aws_instance.ioana-web-server}"
 }
 
 output "ec2-instance-2" {
-  value = "${aws_instance.ioana-instance-2}"
+  value = "${aws_instance.ioana-MySQL}"
 }
 
 output "ec2-instance-3" {
-  value = "${aws_instance.ioana-instance-3}"
+  value = "${aws_instance.ioana-Bastion-host}"
 }
