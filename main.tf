@@ -63,7 +63,7 @@ terraform {
   	backend "s3" {
     	key        = "terraform/tfstate.tfstate"
 	acl        = "private"
-    	bucket     = "state-files-for-terraform"
+    	bucket     = ">>>enter-your-bucket-name<<<"
     	region     = "eu-central-1"
   	}
 }
