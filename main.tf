@@ -7,7 +7,6 @@ resource "aws_instance" "ioana-web-server"{
 	connection {
         type               = "ssh"
         user               = "ec2-user"
-        private_key        = file("D:/terraform/Bastion_VPC/Ioana-ec2-key.pem")
         host               = aws_instance.ioana-web-server.public_ip
   }
 
